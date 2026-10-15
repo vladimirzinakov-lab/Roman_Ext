@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cf646e6-5d38-465a-826a-907383188f2b">
+  <producedTypes>
+    <objectType typeId="ac95db4f-9810-473c-a6c8-ec08ba059d37" valueTypeId="17b24839-cf1e-46dc-9d2d-df710f91f0d5"/>
+  </producedTypes>
+  <name>ЗагрузкаXL_КомиссияМаркетплейсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка XL Комиссия Маркетплейсов</value>
+  </synonym>
+  <comment>28-7</comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="4723a701-93a6-423f-b6c1-2a3fccf5f388"/>
+  <defaultForm>ExternalDataProcessor.ЗагрузкаXL_КомиссияМаркетплейсов.Form.Форма</defaultForm>
+  <attributes uuid="63930ed4-abdf-46db-b3ea-d3b87c97422b">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="b8572275-dd30-4d85-b729-60f0b44982bb">
+    <producedTypes>
+      <objectType typeId="5e39d4f6-2dd3-4dfd-a9d1-35442cec02f5" valueTypeId="2627138d-cdff-4968-be95-ded5d337279a"/>
+      <rowType typeId="f959b9ec-c54b-4953-8904-25c04c10f252" valueTypeId="9161a8a7-4806-4f07-9655-703d6e4d52fb"/>
+    </producedTypes>
+    <name>ТЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТЗ</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0fd45a57-9af6-477d-aceb-12121b7c18bf">
+      <name>Выбран</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выбран</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b7aa1ea0-890f-48c9-8f42-07814ab6df41">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6c5321e8-100f-49d9-9a73-764bb40e30e4">
+      <name>Категория</name>
+      <synonym>
+        <key>ru</key>
+        <value>Категория</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="bb3229e7-68a0-4c5f-9c8f-e56bb7209d23">
+      <name>Комиссия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комиссия</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c3c502bf-b640-447a-a0e1-4b05cda34a1b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>
